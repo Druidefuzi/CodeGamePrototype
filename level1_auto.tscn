@@ -1,0 +1,85 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7av6o2q3upjy"]
+
+[ext_resource type="PackedScene" uid="uid://cauug5gv3str4" path="res://collisionshape.tscn" id="1_2rc0a"]
+[ext_resource type="PackedScene" uid="uid://0g2jnl7tox1v" path="res://auto_character.tscn" id="2_a3o1i"]
+[ext_resource type="PackedScene" uid="uid://cncmq3tvsv6hj" path="res://dangerousbody.tscn" id="2_kmacv"]
+[ext_resource type="PackedScene" uid="uid://b4iymdabioe1y" path="res://winbody.tscn" id="4_okrnk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D9" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(48, -216)
+scale = Vector2(1, 8)
+
+[node name="Node2D14" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(48, -584)
+scale = Vector2(1, 8)
+
+[node name="Node2D15" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(1152, -584)
+scale = Vector2(1, 8)
+
+[node name="Node2D10" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(1152, -216)
+scale = Vector2(1, 8)
+
+[node name="Node2D8" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(384, 131)
+scale = Vector2(8, 1.5)
+
+[node name="Node2D2" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(966, 131)
+scale = Vector2(8, 2)
+
+[node name="Node2D3" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(491, 307)
+scale = Vector2(8, 2)
+
+[node name="Node2D11" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(419, 491)
+scale = Vector2(8, 2)
+
+[node name="Node2D16" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(419, -221)
+scale = Vector2(8, 2)
+
+[node name="Node2D17" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(819, -221)
+scale = Vector2(8, 2)
+
+[node name="Node2D18" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(1131, -221)
+scale = Vector2(8, 2)
+
+[node name="Node2D12" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(811, 491)
+scale = Vector2(8, 2)
+
+[node name="Node2D13" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(1124, 491)
+scale = Vector2(8, 2)
+
+[node name="Node2D4" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(891, 307)
+scale = Vector2(8, 2)
+
+[node name="Node2D5" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(1139, 307)
+scale = Vector2(8, 2)
+
+[node name="Node2D7" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(1139, 131)
+scale = Vector2(8, 2)
+
+[node name="Node2D6" parent="." instance=ExtResource("1_2rc0a")]
+position = Vector2(8798, 393)
+scale = Vector2(64, 4)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_kmacv")]
+show_behind_parent = true
+position = Vector2(368, 344)
+
+[node name="Node2D19" parent="." instance=ExtResource("2_a3o1i")]
+
+[node name="Node2D" parent="." instance=ExtResource("4_okrnk")]
+position = Vector2(1021, 485)

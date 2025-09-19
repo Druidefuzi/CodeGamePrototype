@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://0g2jnl7tox1v"]
+
+[ext_resource type="Script" path="res://auto_move.gd" id="1_hduoh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_saar2"]
+size = Vector2(36, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2cpy"]
+size = Vector2(5, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4cnsl"]
+size = Vector2(5, 18)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8rsum"]
+radius = 36.0139
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(120, -153)
+script = ExtResource("1_hduoh")
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D"]
+offset_left = 149.5
+offset_top = 325.5
+offset_right = 185.5
+offset_bottom = 362.5
+color = Color(0.156863, 0.701961, 0.247059, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(168, 344.5)
+shape = SubResource("RectangleShape2D_saar2")
+
+[node name="Left" type="Area2D" parent="CharacterBody2D"]
+
+[node name="left_collision" type="CollisionShape2D" parent="CharacterBody2D/Left"]
+position = Vector2(145.5, 343)
+shape = SubResource("RectangleShape2D_g2cpy")
+
+[node name="Right" type="Area2D" parent="CharacterBody2D"]
+
+[node name="right_collision" type="CollisionShape2D" parent="CharacterBody2D/Right"]
+position = Vector2(189.5, 343)
+shape = SubResource("RectangleShape2D_4cnsl")
+
+[node name="Danger" type="Area2D" parent="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="danger_collision" type="CollisionShape2D" parent="CharacterBody2D/Danger"]
+position = Vector2(167, 343)
+shape = SubResource("CircleShape2D_8rsum")

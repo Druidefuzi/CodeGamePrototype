@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cncmq3tvsv6hj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4nbrl"]
+blend_mode = 1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ixf7k"]
+size = Vector2(48.375, 48)
+
+[node name="RigidBody2D" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+material = SubResource("CanvasItemMaterial_4nbrl")
+position = Vector2(-22.1875, 86)
+shape = SubResource("RectangleShape2D_ixf7k")
+debug_color = Color(0.976393, 0.0747913, 0.343327, 0.42)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -48.0
+offset_top = 62.0
+offset_right = 2.0
+offset_bottom = 110.0
+color = Color(0.784314, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Node2D" type="Node2D" parent="."]
